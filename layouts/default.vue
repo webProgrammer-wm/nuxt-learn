@@ -1,5 +1,10 @@
 <template>
   <div>
+    <!-- 声明式导航 -->
+    <ul>
+      <nuxt-link to="/film" tag="li" active-class="active">film</nuxt-link>
+      <nuxt-link to="/center" tag="li" active-class="active">center</nuxt-link>
+    </ul>
     <nuxt />
   </div>
 </template>
@@ -52,4 +57,8 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+  .active {
+    color: red;
+  }
 </style>
