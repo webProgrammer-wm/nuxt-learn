@@ -8,6 +8,8 @@
 <script>
     export default {
         name: "_myid",
+        // 指定根组件的模板
+        layout: 'detailtemplate',
         data() {
             return {}
         },
