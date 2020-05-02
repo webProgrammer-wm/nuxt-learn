@@ -1,14 +1,12 @@
 <template>
     <div>
-        film
-        <!-- 嵌套路由 -->
-        <nuxt-child></nuxt-child>
+        nowplaying
     </div>
 </template>
 
 <script>
     export default {
-        name: "film",
+        name: "nowplaying",
         data() {
             return {}
         }
