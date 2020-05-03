@@ -40,12 +40,22 @@ module.exports = {
     modules: [
         // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
+        // 反向代理
+        '@nuxtjs/proxy'
     ],
     /*
     ** Axios module configuration
     ** See https://axios.nuxtjs.org/options
     */
-    axios: {},
+    axios: {
+        proxy: true
+    },
+    proxy: {
+        '/v2': {
+            target: 'https://douban.uieee.com',
+            changeOrigin: true,
+        }
+    },
     /*
     ** Build configuration
     */

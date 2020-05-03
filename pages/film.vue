@@ -1,7 +1,6 @@
 <template>
     <div>
         film
-        <!-- 嵌套路由 -->
         <nuxt-child></nuxt-child>
     </div>
 </template>
